@@ -14,6 +14,7 @@ repositories {
 dependencies {
     implementation(project(":common"))
     implementation("androidx.activity:activity-compose:1.3.0")
+    implementation("io.insert-koin:koin-android:3.2.0-beta-1")
 }
 
 android {

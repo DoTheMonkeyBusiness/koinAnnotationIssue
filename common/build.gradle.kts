@@ -4,6 +4,7 @@ plugins {
     kotlin("multiplatform")
     id("org.jetbrains.compose")
     id("com.android.library")
+    id("com.google.devtools.ksp") version "1.6.10-1.0.4"
 }
 
 group = "com.example.koinissue"
@@ -22,6 +23,10 @@ kotlin {
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
+                api("io.insert-koin:koin-core:3.2.0-beta-1")
+
+                implementation("io.insert-koin:koin-annotations:1.0.0-beta-2")
+                implementation("io.insert-koin:koin-ksp-compiler:1.0.0-beta-2")
             }
         }
         val commonTest by getting {
