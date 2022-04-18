@@ -18,4 +18,4 @@ pluginManagement {
 
 rootProject.name = "koinAnnotationIssue"
 
-include(":android", ":desktop", ":common")
+include(":android", ":desktop", ":common", ":submodule")
