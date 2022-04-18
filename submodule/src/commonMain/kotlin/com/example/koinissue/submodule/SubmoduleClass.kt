@@ -1,4 +1,4 @@
-package com.example.koinissue.common
+package com.example.koinissue.submodule
 
 import org.koin.core.annotation.Single
 
